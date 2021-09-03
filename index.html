@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Black Tree Visualizer</title>
     <script src = "./algorithms/redblacktree.js"></script>
+    <script src = "script.js"></script>
+    <link rel = "stylesheet" href = "RBT.css" type = "text/css">
 </head>
-<body onload = "test()">
+
+<body onload = "start()">
+    <h1 class = "title-section">Red Black Tree Visualizer</h1>
+    <input type = "number" name ="nodevalue" id = "nodevalue">
     <br>
-    <input type = "number" name ="nodevalue" id = "nodevalue"><br>
     <button onclick = "addNode()">Add Node</button>
+    <button onclick = "clearBoard()">Clear the Canvas</button>
     <div id = "rbtzone"></div>
 </body>
 </html>
